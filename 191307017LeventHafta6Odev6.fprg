@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="45"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-11-06 09:32:25 &#214;&#214;"/>
+        <attribute name="created" value="NDU7REVTS1RPUC1OS1VIQU8xOzIwMTktMTEtMDY7MDk6MDc6MTQgw5bDljsyNzQ3"/>
+        <attribute name="edited" value="NDU7REVTS1RPUC1OS1VIQU8xOzIwMTktMTEtMDY7MDk6MzI6MjUgw5bDljsyOzI4NTY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="say&#305;, a, g" type="Integer" array="False" size=""/>
+            <assign variable="g" expression="0"/>
+            <output expression="&quot;B&#304;R SAYI G&#304;R&#304;N&#304;Z VE ASAL OLUP OLMADI&#286;INI BULALIM&quot;" newline="True"/>
+            <input variable="say&#305;"/>
+            <if expression="say&#305;&lt;2">
+                <then>
+                    <output expression="&quot;L&#252;tfen 2 den b&#252;y&#252;k bir DO&#286;AL say&#305; giriniz&quot;" newline="True"/>
+                    <call expression="main"/>
+                </then>
+                <else>
+                    <for variable="a" start="1" end="say&#305;" direction="inc" step="1">
+                        <if expression="say&#305;%a==0">
+                            <then>
+                                <assign variable="g" expression="g+1"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </for>
+                    <if expression="g==2">
+                        <then>
+                            <output expression="say&#305;&amp;&quot; say&#305;s&#305; asal say&#305;d&#305;r&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="say&#305;&amp;&quot; say&#305;s&#305; asal say&#305; de&#287;ildir&quot;" newline="True"/>
+                        </else>
+                    </if>
+                    <call expression="main"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
